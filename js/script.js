@@ -26,6 +26,11 @@ modalClose.addEventListener('click', () => {
     modalMask.classList.remove('active');
 });
 
+modalMask.addEventListener('click', () => {
+    modalBody.classList.remove('active');
+    modalMask.classList.remove('active');
+});
+
 /* アコーディオンメニュー
 ================================================== */
 const accordionTitles = document.querySelectorAll('.accordion-title');
